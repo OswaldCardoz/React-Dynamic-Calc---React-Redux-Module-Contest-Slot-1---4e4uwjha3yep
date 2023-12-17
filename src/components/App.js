@@ -8,12 +8,14 @@ const App = () => {
  useEffect(()=>{
   const num1=parseFloat(input1);
   const num2=parseFloat(input2);
-  if(!NaN(num1)&&!NaN(num2)){
-    setResult(num1+num2);
-  }else{
-    setResult(0);
-  }
+  // if(!NaN(num1)&&!NaN(num2)){
+  //   setResult(num1+num2);
+  // }else{
+  //   setResult(0);
+  // }
+  setResult(num1+num2);
  },[input1,input2]);
+ 
  const handleInput1=(e)=>{
   setInput1(e.target.value);
  }
